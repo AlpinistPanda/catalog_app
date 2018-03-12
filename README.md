@@ -9,10 +9,11 @@ If a user logins, he can edit items and add new items.
 
 ## Files
 
-project.py --> main file runs flask
-database_setup.py --> sets up the database
-lotsofmenus.py --> populates the database with test data 
-templates --> folder that has html templates
+project.py --> main file runs flask  
+database_setup.py --> sets up the database  
+lotsofmenus.py --> populates the database with test data  
+templates --> folder that has html templates 
+
 
 ## Instructions
 
