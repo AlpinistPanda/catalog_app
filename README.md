@@ -3,16 +3,16 @@
 ## About
 
 This is an application built for a project requirement in Udacity Fullstack Nanodegree program. 
-It provides a list of items within a variety of categories as well as provide a user registration 
+It connects to a database and retrieves a list of items within some categories (sports). It features a user login
 and authentication system.
-Registered users will have the ability to post, edit and delete their own items.
+If a user logins, he can edit items and add new items.
 
+## Files
 
-
-This project has one main Python module project.py which runs the Flask application. 
-A SQL database is created using the database_setup.py module and you can choose to populate the database with test data using
-databasesetup.py. The Flask application uses stored HTML templates in the tempaltes folder to build the front-end of the 
-application. CSS is stored in the static folder.
+project.py --> main file runs flask
+database_setup.py --> sets up the database
+lotsofmenus.py --> populates the database with test data 
+templates --> folder that has html templates
 
 ## Instructions
 
@@ -28,6 +28,6 @@ application. CSS is stored in the static folder.
     Run application using python project.py
     Access the application locally using http://localhost:5000
 
-JSON Endpoints
+## JSON Endpoints
 
 JSON Catalog: /catalog/JSON - This displays the entire catalog
