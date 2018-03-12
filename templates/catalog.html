@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% include "header.html" %}
+
+<div class="row">
+  <div class="col-md-3 category-list">
+    <h2>Categories</h2>
+    <ul>
+    {% for category in categories %}
+		   <li><a href = "{{url_for('showItems', category_name = category.name)}}"> {{category.name}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="col-md-4 item-list">
+    <a href = "{{url_for('newCategoryItem')}}">Add Item</a>
+    <h2>Latest Items</h2>
+    <ul>
+
+      {% for item in items %}
+        <li><a href = "{{url_for('viewCategoryItem', category_name = item.category.name, item_title = item.title)}}">{{item.title}}</a> ({{item.category.name}})</li>
+      {% endfor %}
+
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
