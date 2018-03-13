@@ -7,10 +7,12 @@ It connects to a database and retrieves a list of items within some categories (
 and authentication system.
 If a user logins, he can edit or delete existing items (only if he created it) and add new items.
 
-## Changes after first review ver. 2
+## Changes after first review -- ver. 2
 
 - removed facebook login as it needs a valid privacy agreement and i dont have that
-- removed the feature of adding, removing, 
+- removed the feature of adding, removing or editing Categories as it is not required and not much meaningful
+- corrected a bug in google login
+- authorization feature (user needs to own the category item to edit, or delete it)
 
 ## Files
 
