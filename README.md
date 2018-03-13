@@ -7,6 +7,11 @@ It connects to a database and retrieves a list of items within some categories (
 and authentication system.
 If a user logins, he can edit or delete existing items (only if he created it) and add new items.
 
+## Changes after first review ver. 2
+
+- removed facebook login as it needs a valid privacy agreement and i dont have that
+- removed the feature of adding, removing, 
+
 ## Files
 
 project.py --> main file runs flask  
