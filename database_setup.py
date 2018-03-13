@@ -8,7 +8,6 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 
-
 #  table to store users
 class User(Base):
     __tablename__ = 'user'
@@ -18,6 +17,8 @@ class User(Base):
     email = Column(String(200), nullable=False)
 
 #  table to store categories
+
+
 class Category(Base):
     __tablename__ = 'category'
 
@@ -25,6 +26,7 @@ class Category(Base):
     name = Column(String(100), nullable=False)
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
+    categoryItem = relationship('CategoryItem', cascade='all, delete-orphan')
 
     @property
     def serialize(self):
@@ -35,6 +37,8 @@ class Category(Base):
         }
 
 #  table to store category items
+
+
 class CategoryItem(Base):
     __tablename__ = 'categoryItem'
 
